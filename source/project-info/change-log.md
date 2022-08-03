@@ -35,8 +35,8 @@
     * Ability to view and modify previously loaded case sets
     * Display of both matched and unmatched entered case IDs in a pop-up window
     * Support for uploading a file to find a set of cases
-*Dynamic query builds upon selection or removal of faceted filters and Local Find results
-*Integration of JBrowse a next-generation genome browser
+* Dynamic query builds upon selection or removal of faceted filters and Local Find results
+* Integration of JBrowse a next-generation genome browser
     * Visualization of bam and vcf files
     * Support for the human genome version hg19
 * Increased compliance with the Individuals with Disabilities Education Act (IDEA)
