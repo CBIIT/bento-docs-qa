@@ -55,6 +55,7 @@ GitHub: `https://github.com/CBIIT/bento-docs/ <https://github.com/CBIIT/bento-do
     configuration/dashboard-tabs-and-tables
     configuration/cart-workflow
     configuration/static-pages
+    configuration/authentication
 
 .. toctree::
     :maxdepth: 1
