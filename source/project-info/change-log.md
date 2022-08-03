@@ -3,8 +3,8 @@
 
 ## release-3.8.0
 
-*Authentication service supports multiple Identity Providers (IdPs)
-*Ability to configure IdPs
+* Authentication service supports multiple Identity Providers (IdPs)
+* Ability to configure IdPs
 
 ## release-3.7.0
 
