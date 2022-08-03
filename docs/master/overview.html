@@ -4,11 +4,11 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Overview &mdash; Bento  documentation</title>
+  <title>Overview &mdash; Bento release-3.8.0 documentation</title>
   
 
   
@@ -32,6 +32,7 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -64,7 +65,7 @@
             
             
               <div class="version">
-                latest
+                release-3.8.0
               </div>
             
           
@@ -121,6 +122,7 @@
 <li class="toctree-l1"><a class="reference internal" href="configuration/dashboard-tabs-and-tables.html">9. Dashboard: Tabs and Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration/cart-workflow.html">10. Cart Workflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration/static-pages.html">11. Static Pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration/authentication.html">12. Authentication</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data and Modeling</span></p>
 <ul>
@@ -216,11 +218,11 @@
            <div itemprop="articleBody">
             
   <section id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h1>
 <p>Bento is a software framework being built to support NCI’s <a class="reference external" href="https://datascience.cancer.gov/data-commons">Cancer Research Data Commons</a> projects, including Integrated Canine Data Commons (ICDC), and Clinical Trial Data Commons (CTDC).
 <br>This site provides you with the background and instructions you need to set up your own data sharing platform using Bento.</p>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>Bento is an open-source software framework for data sharing platforms that allow users to store, manage, share and analyze large-scale data according to the <a class="reference external" href="https://www.go-fair.org/fair-principles/">FAIR</a> principles.</p>
 <p>Bento is built on three organizing principles:</p>
 <ol class="simple">
@@ -231,7 +233,7 @@
 <p><a class="reference external" href="http://dev.bento-tools.org/">This</a> data sharing platform was built as a reference implementation of Bento. You can explore it to better understand the capabilities of the framework.</p>
 </section>
 <section id="bento-architecture">
-<h2>Bento Architecture<a class="headerlink" href="#bento-architecture" title="Permalink to this headline">¶</a></h2>
+<h2>Bento Architecture<a class="headerlink" href="#bento-architecture" title="Permalink to this heading">¶</a></h2>
 <p><strong>System Architecture</strong></p>
 <p>The System Architecture is described in terms of 2 different ecosystem components. These 2 eco systems are</p>
 <ul class="simple">
@@ -262,7 +264,7 @@
 <p>The Dynamic Security components focuses on the deployed infrastructure and the application. IBM AppScan is utilized to periodically run vulnerability scans on the Bento Web Application. The vulnerabilities identified are then remedied in the current Sprint or added to the Sprint Backlog for future action depending upon the severity. The security of the network and instances utilize AWS recommended best practices. The access to the Web instances is allowed only via the ALB and on specific ports only using AWS Security Groups which act as an instance Firewall. Placing the ALB on a Public Subnet and instances on Private Subnets with a NAT (Network Address Translator) using Route Tables provides network level isolation for the instances keeping the virtual machines secure from malicious traffic while allowing them to get software updates as necessary.</p>
 </section>
 <section id="bento-frontend-documentation">
-<h2>Bento – Frontend Documentation<a class="headerlink" href="#bento-frontend-documentation" title="Permalink to this headline">¶</a></h2>
+<h2>Bento – Frontend Documentation<a class="headerlink" href="#bento-frontend-documentation" title="Permalink to this heading">¶</a></h2>
 <p><strong>1-Technical Stack</strong></p>
 <ol class="simple">
 <li><p><strong>- React</strong></p></li>
@@ -360,7 +362,7 @@
 </ul>
 </section>
 <section id="bento-backend-api-architecture-documentation">
-<h2>Bento – Backend &amp; API Architecture Documentation<a class="headerlink" href="#bento-backend-api-architecture-documentation" title="Permalink to this headline">¶</a></h2>
+<h2>Bento – Backend &amp; API Architecture Documentation<a class="headerlink" href="#bento-backend-api-architecture-documentation" title="Permalink to this heading">¶</a></h2>
 <p><strong>Backend &amp; API Documentation General Overview</strong></p>
 <p><img alt="Backend and API Documentation General Overview" src="_images/backend-and-api-general.jpg" /></p>
 <ul class="simple">
@@ -400,7 +402,7 @@
 <p>RESTFUL API will send the graphql request to the neo4j. GraphQL API will validate the payload, if is valid request then send the graphql request to the neo4j.</p>
 </section>
 <section id="bento-data-model">
-<h2>Bento Data Model<a class="headerlink" href="#bento-data-model" title="Permalink to this headline">¶</a></h2>
+<h2>Bento Data Model<a class="headerlink" href="#bento-data-model" title="Permalink to this heading">¶</a></h2>
 <p>The Bento Core Data Model is a graphical data model that has been designed to address the data storage needs of clinical trials and research programs; it can be adapted to most data generation workflows. Graphical data models organize data in the form of a graph. The Bento Core Data Model models key components of a data generation workflow as nodes, and the relationships among them as edges. Both nodes and edges can store data in the form of properties.
 It is based on the Aggregated Data Model developed by the <a class="reference external" href="https://datascience.cancer.gov/data-commons/center-cancer-data-harmonization-ccdh">Center for Cancer Data Harmonization</a>. The Aggregated Data Model synthesizes core concepts from three data sharing platforms- the <a class="reference external" href="https://gdc.cancer.gov/">Genomic Data Commons</a>; the <a class="reference external" href="https://proteomic.datacommons.cancer.gov/pdc/">Proteomic Data Commons</a> and the <a class="reference external" href="https://caninecommons-dev.cancer.gov/">Integrated Canine Data Commmons</a>.
 This model allows you to set up a <i>minimal</i> but <i>functioning</i> data sharing platform, where users can navigate from a selected clinical trial or program to a set of files of their choice.</p>
@@ -432,7 +434,7 @@ This model allows you to set up a <i>minimal</i> but <i>functioning</i> data sha
         
         &copy; Copyright 2021, CBIIT
       <span class="lastupdated">
-        Last updated on Jul 21, 2021, 7:32:47 AM.
+        Last updated on Aug 3, 2022, 2:24:35 PM.
       </span>
 
     </p>
@@ -469,6 +471,7 @@ This model allows you to set up a <i>minimal</i> but <i>functioning</i> data sha
         <li><a href="../release-2.0.0/index.html">release-2.0.0</a></li>
         <li><a href="../release-2.0.1/index.html">release-2.0.1</a></li>
         <li><a href="../release-3.0.0/index.html">release-3.0.0</a></li>
+        <li><a href="../release-3.8.0/index.html">release-3.8.0</a></li>
         <li><a href="../release-MVP/index.html">release-MVP</a></li>
       </ul>
       <br>
@@ -485,6 +488,7 @@ This model allows you to set up a <i>minimal</i> but <i>functioning</i> data sha
       <dd><a href="../release-2.0.0/index.html">release-2.0.0</a></dd>
       <dd><a href="../release-2.0.1/index.html">release-2.0.1</a></dd>
       <dd><a href="../release-3.0.0/index.html">release-3.0.0</a></dd>
+      <dd><a href="../release-3.8.0/index.html">release-3.8.0</a></dd>
       <dd><a href="../release-MVP/index.html">release-MVP</a></dd>
     </dl>
    -->

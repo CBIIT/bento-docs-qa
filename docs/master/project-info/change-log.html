@@ -4,11 +4,11 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5. Change Log &mdash; Bento  documentation</title>
+  <title>5. Change Log &mdash; Bento release-3.8.0 documentation</title>
   
 
   
@@ -32,6 +32,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
@@ -63,7 +64,7 @@
             
             
               <div class="version">
-                latest
+                release-3.8.0
               </div>
             
           
@@ -113,6 +114,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../configuration/dashboard-tabs-and-tables.html">9. Dashboard: Tabs and Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../configuration/cart-workflow.html">10. Cart Workflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../configuration/static-pages.html">11. Static Pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration/authentication.html">12. Authentication</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data and Modeling</span></p>
 <ul>
@@ -131,10 +133,14 @@
 <li class="toctree-l1"><a class="reference internal" href="meet-the-team.html">3. Meet the Team</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">4. License</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">5. Change Log</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#release-3-0-0">5.1. release-3.0.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#release-2-0-1">5.2. release-2.0.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#release-2-0-0">5.3. release-2.0.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#release-mvp-v1-0-0">5.4. release-MVP (v1.0.0)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#release-3-8-0">5.1. release-3.8.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#release-3-7-0">5.2. release-3.7.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#release-3-6-0">5.3. release-3.6.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#release-3-2-0">5.4. release-3.2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#release-3-0-0">5.5. release-3.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#release-2-0-1">5.6. release-2.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#release-2-0-0">5.7. release-2.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#release-mvp-v1-0-0">5.8. release-MVP (v1.0.0)</a></li>
 </ul>
 </li>
 </ul>
@@ -212,9 +218,77 @@
            <div itemprop="articleBody">
             
   <section id="change-log">
-<h1><span class="section-number">5. </span>Change Log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">5. </span>Change Log<a class="headerlink" href="#change-log" title="Permalink to this heading">¶</a></h1>
+<section id="release-3-8-0">
+<h2><span class="section-number">5.1. </span>release-3.8.0<a class="headerlink" href="#release-3-8-0" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Authentication service supports multiple Identity Providers (IdPs)</p></li>
+<li><p>Ability to configure IdPs</p></li>
+</ul>
+</section>
+<section id="release-3-7-0">
+<h2><span class="section-number">5.2. </span>release-3.7.0<a class="headerlink" href="#release-3-7-0" title="Permalink to this heading">¶</a></h2>
+<p><strong>Features</strong></p>
+<ul class="simple">
+<li><p>Authentication service enabled</p></li>
+<li><p>Google supported as an Identity Provider</p></li>
+<li><p>Lock icons are displayed if unauthenticated user tries to download files</p></li>
+<li><p>Ability to enable or disable authentication</p></li>
+<li><p>Advanced facet filters for number ranges added to Explore Dashboard</p></li>
+</ul>
+</section>
+<section id="release-3-6-0">
+<h2><span class="section-number">5.3. </span>release-3.6.0<a class="headerlink" href="#release-3-6-0" title="Permalink to this heading">¶</a></h2>
+<p><strong>Features</strong></p>
+<ul class="simple">
+<li><p>Elastic Search added to improve performance</p>
+<ul>
+<li><p>Support for Global Search of site contents</p></li>
+<li><p>Auto-complete of entered text for Global Search</p></li>
+<li><p>Ability to filter Global Search results and counts</p></li>
+<li><p>Consistent metadata displayed across Global Search categories</p></li>
+<li><p>Magnifying glass for Global Search</p></li>
+<li><p>Global Search results return hyperlinks that redirect to additional details</p></li>
+<li><p>Return of paginated and ordered results from Global Search</p></li>
+</ul>
+</li>
+<li><p>Support for Local Find for case IDs</p>
+<ul>
+<li><p>Auto-complete of entered text for Local Find</p></li>
+<li><p>Ability to enter a list to find a set of cases</p></li>
+<li><p>Static query returned from Local Find parameters</p></li>
+<li><p>Ability to view and modify previously loaded case sets</p></li>
+<li><p>Display of both matched and unmatched entered case IDs in a pop-up window</p></li>
+<li><p>Support for uploading a file to find a set of cases
+*Dynamic query builds upon selection or removal of faceted filters and Local Find results
+*Integration of JBrowse a next-generation genome browser</p></li>
+<li><p>Visualization of bam and vcf files</p></li>
+<li><p>Support for the human genome version hg19</p></li>
+</ul>
+</li>
+<li><p>Increased compliance with the Individuals with Disabilities Education Act (IDEA)</p></li>
+<li><p>Mock dataset generator</p>
+<ul>
+<li><p>Support for reading ID fields from a config file</p></li>
+<li><p>Compatibility with Docker</p></li>
+</ul>
+</li>
+<li><p>Bento Code Refactoring</p></li>
+</ul>
+</section>
+<section id="release-3-2-0">
+<h2><span class="section-number">5.4. </span>release-3.2.0<a class="headerlink" href="#release-3-2-0" title="Permalink to this heading">¶</a></h2>
+<p><strong>Features</strong></p>
+<ul class="simple">
+<li><p>Ability to sort and order additional facet values</p></li>
+<li><p>Widget text is configurable</p></li>
+<li><p>Text cutoff(…) for widgets on the Explore Dashboard</p></li>
+<li><p>Default styling for faceted sections</p></li>
+<li><p>Upgraded react-dev-utils from 7.0.5 to 11.0.4</p></li>
+</ul>
+</section>
 <section id="release-3-0-0">
-<h2><span class="section-number">5.1. </span>release-3.0.0<a class="headerlink" href="#release-3-0-0" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.5. </span>release-3.0.0<a class="headerlink" href="#release-3-0-0" title="Permalink to this heading">¶</a></h2>
 <p><strong>Improvements</strong></p>
 <ul class="simple">
 <li><p>Enhanced dashboard filters</p></li>
@@ -251,14 +325,14 @@
 </ul>
 </section>
 <section id="release-2-0-1">
-<h2><span class="section-number">5.2. </span>release-2.0.1<a class="headerlink" href="#release-2-0-1" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.6. </span>release-2.0.1<a class="headerlink" href="#release-2-0-1" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Facet Filter - Updated the facet filter logic to represent updated filters while the user is actively filtering</p></li>
 <li><p>Facet Filter - Now the count in brackets of facet represents the respective facet tabs counts (Filter by samples represent samples count, Filter by files represent files count)</p></li>
 </ul>
 </section>
 <section id="release-2-0-0">
-<h2><span class="section-number">5.3. </span>release-2.0.0<a class="headerlink" href="#release-2-0-0" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.7. </span>release-2.0.0<a class="headerlink" href="#release-2-0-0" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Added multiple tabs on Dashboard</p></li>
 <li><p>Added mutliple categories for facet filtering on Dashboard Sidebar</p></li>
@@ -269,7 +343,7 @@
 </ul>
 </section>
 <section id="release-mvp-v1-0-0">
-<h2><span class="section-number">5.4. </span>release-MVP (v1.0.0)<a class="headerlink" href="#release-mvp-v1-0-0" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.8. </span>release-MVP (v1.0.0)<a class="headerlink" href="#release-mvp-v1-0-0" title="Permalink to this heading">¶</a></h2>
 <p>Initial release</p>
 </section>
 </section>
@@ -295,7 +369,7 @@
         
         &copy; Copyright 2021, CBIIT
       <span class="lastupdated">
-        Last updated on Jul 21, 2021, 7:32:47 AM.
+        Last updated on Aug 3, 2022, 2:24:35 PM.
       </span>
 
     </p>
@@ -332,6 +406,7 @@
         <li><a href="../../release-2.0.0/index.html">release-2.0.0</a></li>
         <li><a href="../../release-2.0.1/index.html">release-2.0.1</a></li>
         <li><a href="../../release-3.0.0/index.html">release-3.0.0</a></li>
+        <li><a href="../../release-3.8.0/index.html">release-3.8.0</a></li>
         <li><a href="../../release-MVP/index.html">release-MVP</a></li>
       </ul>
       <br>
@@ -348,6 +423,7 @@
       <dd><a href="../../release-2.0.0/index.html">release-2.0.0</a></dd>
       <dd><a href="../../release-2.0.1/index.html">release-2.0.1</a></dd>
       <dd><a href="../../release-3.0.0/index.html">release-3.0.0</a></dd>
+      <dd><a href="../../release-3.8.0/index.html">release-3.8.0</a></dd>
       <dd><a href="../../release-MVP/index.html">release-MVP</a></dd>
     </dl>
    -->
